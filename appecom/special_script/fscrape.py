@@ -46,7 +46,8 @@ def fscrape(prod,page=None):
 
         #image
 
-        image = product.find(class_="_3exPp9")
+        # image = product.find(class_="_3exPp9")
+        image = product.find(class_="_396cs4")
         image = image.get("src")
 
 
