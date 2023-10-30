@@ -15,7 +15,7 @@ def get_description(url):
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36',
     'From': 'google.com'  # This is another valid field
     }
-    r = requests.get(url,headers=headers)
+    r = requests.post(url,headers=headers)
     print(r)
     print(r.content)
 
