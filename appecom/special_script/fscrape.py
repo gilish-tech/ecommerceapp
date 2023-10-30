@@ -13,6 +13,11 @@ import re
 dollar = 0.013
 
 def fscrape(prod,page=None):
+    print("scraping")
+    print("scraping")
+    print("scraping")
+    print("scraping")
+    print("scraping")
     if not page:
         page = 1
     url =f"https://www.flipkart.com/search?q={prod}&page={page}%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
