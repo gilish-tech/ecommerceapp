@@ -16,6 +16,8 @@ def get_description(url):
     'From': 'google.com'  # This is another valid field
     }
     r = requests.get(url,headers=headers)
+    print(r)
+    print(r.content)
 
     soup = BeautifulSoup(r.content,"html.parser")
 
