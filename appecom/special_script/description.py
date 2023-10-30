@@ -17,7 +17,7 @@ def get_description(url):
     }
     r = requests.post(url,headers=headers)
     print(r)
-    print(r.content)
+    # print(r.content)
 
     soup = BeautifulSoup(r.content,"html.parser")
 
