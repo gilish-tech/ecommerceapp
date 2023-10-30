@@ -13,6 +13,8 @@ import re
 dollar = 0.013
 
 def fscrape(prod,page=None):
+    r_test = requests.get("https://www.gistlover.com/")
+    print(r_test)
     print("scraping")
     print("scraping")
     print("scraping")
