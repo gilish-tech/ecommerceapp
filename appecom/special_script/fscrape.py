@@ -15,7 +15,7 @@ dollar = 0.013
 def fscrape(prod,page=None):
     if not page:
         page = 1
-    url =f"https://www.flipkart.com/search?q={prod}&page={page}"
+    url =f"https://www.flipkart.com/search?q={prod}&page={page}%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
 
 
     headers = {
@@ -26,7 +26,7 @@ def fscrape(prod,page=None):
 
 
 
-    response = requests.get(url,headers=headers)
+    response = requests.post(url,headers=headers)
 
     print(response)
 
@@ -124,7 +124,7 @@ def secscrape(prod,page=None):
     }
 
 
-    response = requests.get(url,headers=headers)
+    response = requests.post(url,headers=headers)
 
     print(response)
 
