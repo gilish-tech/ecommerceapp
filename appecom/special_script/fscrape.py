@@ -13,8 +13,13 @@ import re
 dollar = 0.013
 
 def fscrape(prod,page=None):
-    r_test = requests.get("https://www.gistlover.com/")
-    print(r_test)
+    headersy = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    }
+    r2 = requests.post("https://www.flipkart.com/apple-iphone-14-blue-128-gb/p/itmdb77f40da6b6d?pid=MOBGHWFHSV7GUFWA&lid=LSTMOBGHWFHSV7GUFWA3AV8J8&marketplace=FLIPKART&q=iphone&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=0bbc1f87-f318-4cd2-85dc-ee43a2c9c7c3.MOBGHWFHSV7GUFWA.SEARCH&ppt=sp&ppn=sp&ssid=a4sb99tshc0000001698675277702&qH=0b3f45b266a97d70",headers=headersy)
+
+    print(r2)
+
     print("scraping")
     print("scraping")
     print("scraping")
